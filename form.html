@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="vimeline-ico.ico" type="image/x-icon">
+    <link href="assets/css/form.css" rel="stylesheet">
+    <link href="assets/css/adaptive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VimeLine</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <button class="header__logo top_button">
+                    <img class="logo" src="assets/img/VimeLine.png" alt="">
+                </button>
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">Главная</a>
+                    <a class="nav__link" href="wiki.html">Wiki</a>
+                    <a class="nav__link" href="join.html">Как попасть</a>
+                    <a class="nav__link" href="rules.html">Правила</a>
+                    <a class="nav__link" href="https://discord.gg/4ZVqVuzmjm"><img src="assets/img/discord.png" alt=""></a>
+                    <a class="nav__link" href="#"><img src="assets/img/vk.png" alt=""></a>
+                    <a class="nav__link" href="#"><img src="assets/img/telegram.png" alt=""></a>
+                </nav>
+                    <div class="search">
+                        <p></p>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form__content">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfXP0dnTu-rhdQ9HIL90G9IHhF-TtV75v8V9YKonTdRfGkCcw/formResponse" method="post" target="hiddenConfirm" onsubmit='disableButton()'>
+            <h1>Заявка на VimeLine</h1>
+            <div class="form__element form__name">
+                <label for="entry.518928662" placeholder="Имя">Как вас зовут?<span> ⃰</span></label><br>
+                <input required type="text" name="entry.518928662"><br>
+            </div>
+            <div class="form__element form__age">
+                <label for="entry.1748550205">Сколько вам лет?<span> ⃰</span></label><br>
+                <input required type="text" name="entry.1748550205"><br>
+            </div>
+            <div class="form__element form__discord">
+                <label for="entry.274813806">Вы состоите в нашем дискорд сервере?<span> ⃰</span></label><br>
+                <input required type="radio" name="entry.274813806" id="Да" value="Да">Да<br>
+                <input required type="radio" name="entry.274813806" id="Нет" value="Нет">Нет<br>
+            </div>
+            <div class="form__element form__discord__name">
+                <label for="entry.847102155">Ваш ник в discord. Пример: "TrueCoder#8016"<span> ⃰</span></label><br>
+                <input required type="text" name="entry.847102155"><br>
+            </div>
+            <div class="form__element form__nickname">
+                <label for=entry.636517045">Ваш игровой ник:<span> ⃰</span></label><br>
+                <input required type="text" name="entry.636517045"><br>
+            </div>
+            <div class="form__element form__plasmovoice">
+                <label for="entry.490803936">У вас установлен мод PlasmoVoice?<span> ⃰</span></label><br>
+                <input required type="radio" name="entry.490803936" id="Да" value="Да">Да<br>
+                <input required type="radio" name="entry.490803936" id="Нет" value="Нет">Нет<br>
+            </div>
+            <div class="form__element form__about">
+                <label for="entry.1405008325">Расскажите немного о себе: (Не менее 2-х предложений.)<span> ⃰</span></label><br>
+                <textarea required type="text" name="entry.1405008325"></textarea><br>
+            </div>
+            <div class="form__element form__dm">
+                <label for="entry.1537459338">Представим ситуацию, что игрока бьют на спавне, ваши действия?<span> ⃰</span></label>
+                <textarea required type="text" name="entry.1537459338"></textarea><br>
+            </div>
+            <div class="form__element form__game">
+                <label for="entry.1828441220">Чем вы будете заниматься на сервере?<span> ⃰</span></label><br>
+                <textarea required type="text" name="entry.1828441220"></textarea><br>
+            </div>
+            <div class="form__element form__game__level">
+                <label for="entry.862160368">Оцените уровень вашей игры по 10-ти бальной шкале:<span> ⃰</span></label><br>
+                <input required type="text" name="entry.862160368"><br>
+            </div>
+            <div class="form__element form__time">
+                <label for="entry.1327461751">Сколько времени вы готовы проводить на сервере в неделю?<span> ⃰</span></label><br>
+                <input required type="text" name="entry.1327461751"><br>
+            </div>
+            <button id="btn" type="submit">Отправить</button>
+        </form>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__boxes">
+            <div class="footer__title">
+                Сайт является частью сервера <b>VimeLine</b>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function disableButton() {
+            var btn = document.getElementById('btn');
+            btn.disabled = true;
+            btn.innerText = 'Опубликовано!'
+        }
+    </script>
+    <script src="index.js"></script>
+    <iframe name="hiddenConfirm" id="hiddenConfirm" style="display:none;" onload="if(submitted){window.location='form.html'}"></iframe>
+</body>
+</html>

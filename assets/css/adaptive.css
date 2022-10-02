@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1200px) {
+    /* */
+    .blog__title {
+      font-size: 27px;
+    }
+
+    .info__box1 .info__box2 .info__box3 {
+      max-width: 30%;
+      padding: 20px;
+    }
+
+    .info__box__ico img{
+      width: 70px;
+    }
+
+    .info__box__title {
+      font-size: 11px;
+    }
+
+    .info__box__text {
+      font-size: 10px;
+    }
+  }
+
+@media only screen and (max-width: 992px) {
+    /* */
+  }
+  
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    /* */
+  }
+  
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 480px) {
+    /* */
+
+    .info__boxes {
+      flex-direction: column;
+    }
+  }
+  
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 320px) {
+    /* */
+  }
