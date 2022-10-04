@@ -11,9 +11,27 @@
     <title>VimeLine</title>
 </head>
 <body>
+    <div class="wrapper">
     <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                
+                    <ul class="menu__box">
+                      <li><a class="menu__item" href="index.html">Главная</a></li>
+                      <li><a class="menu__item" href="wiki.html">Wiki</a></li>
+                      <li><a class="menu__item" href="join.html">Как попасть</a></li>
+                      <li><a class="menu__item" href="rules.html">Правила</a></li>
+                      <li><p class="menu__item"></p></li>
+                      <li><a class="menu__item" href="https://discord.gg/4ZVqVuzmjm">Discord</a></li>
+                      <li><a class="menu__item" href="#">Vk</a></li>
+                      <li><a class="menu__item" href="#">Telegram</a></li>
+                    </ul>
+                  </div>
                 <button class="header__logo top_button">
                     <img class="logo" src="assets/img/VimeLine.png" alt="">
                 </button>
@@ -50,12 +68,11 @@
                     </div>
                 </div>
             </div>
-        <div class="container">
             <div class="title__2">
                 <h1>Что у нас есть:</h1>
             </div>
             <div class="info__boxes">
-                <div class="info__box1">
+                <div class="info__box">
                     <div class="info__box__ico">
                         <img src="assets/img/coop.png" alt="">
                         <div class="info__box__title">
@@ -66,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="info__box3">
+                <div class="info__box">
                     <div class="info__box__ico">
                         <img src="assets/img/free.png" alt="">
                         <div class="info__box__title">
@@ -77,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="info__box2">
+                <div class="info__box">
                     <div class="info__box__ico">
                         <img src="assets/img/new.png" alt="">
                         <div class="info__box__title">
@@ -89,15 +106,18 @@
                     </div>
                 </div>
             </div>
-        </div>
         <footer class="footer">
             <div class="footer__boxes">
                 <div class="footer__title">
                     Сайт является частью сервера <b>VimeLine</b>
                 </div>
+                <div class="footer__creator">
+                        <p>Сайт разработан <a target="_blank" href="https://github.com/NonemJS"><b>NonemJS</b></a></p>
+                </div>
             </div>
         </footer>
     </main>
+</div>
     <script src="index.js"></script>
 </body>
 </html>

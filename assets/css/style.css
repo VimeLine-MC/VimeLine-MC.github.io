@@ -39,6 +39,11 @@ p {
 
 /* Container
 ===================*/
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .container {
     position: relative;
     width: 100%;
@@ -133,7 +138,7 @@ p {
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -173,6 +178,88 @@ p {
     transition: 0.5s;
 }
 
+
+/* Burger
+=================*/
+
+.hamburger-menu {
+    display: none;
+}
+
+#menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: rgb(70, 69, 69);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+
+
 /*Blog
 ======================*/
 .blog__boxes {
@@ -195,7 +282,8 @@ p {
 }
 
 .blog__title span {
-    color: rgb(41, 205, 255);
+    color: #fff;
+    text-shadow: #00c3ff 5px 5px 5px;
 }
 
 .blog__title h1 {   
@@ -281,66 +369,28 @@ p {
     display: flex;
 }
 .info__boxes {
+    flex-direction: row;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 100px;
 }
 
-.info__box1 {
+.info__box {
+    width: 500px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: rgb(53, 53, 53);
-    max-width: 33%;
-    background-color:rgb(75, 218, 158);
+    background-color:#00c3ff;
     background-size: 150%;
     border-radius: 50px;
-    padding : 60px;
+    padding: 70px 30px;
     backdrop-filter: blur(5px);
-    text-align: center;
-    
+    margin: 0 100px;
     transition: .5s;
 }
 
-.info__box1:hover {
-    background-color: #15946a;  
-}
-
-.info__box2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(53, 53, 53);
-    max-width: 33%;
-    background-color:#e9ec3f;
-    background-size: 150%;
-    border-radius: 50px;
-    padding: 60px;
-    backdrop-filter: blur(5px);
-    text-align: center;
-    
-    transition: .5s;
-}
-
-.info__box2:hover {
-    background-color: #c7a200;   
-}
-
-.info__box3 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(53, 53, 53);
-    max-width: 33%;
-    background-color:#43caf3;
-    background-size: 150%;
-    border-radius: 50px;
-    padding: 60px;
-    backdrop-filter: blur(5px);
-    text-align: center;
-    
-    transition: .5s;
-}
-
-.info__box3:hover {
-    background-color: #2a85cf;   
+.info__box:hover {
+    background-color: #00aeff;  
 }
 
 .info__box__ico img{
@@ -348,27 +398,42 @@ p {
 }
 
 .info__box__title {
+    margin: auto;
     font-weight: 800;
     font-size: 15px;
     max-width: 300px;
 }
 
 .info__box__text {
-    font-weight: 500;
+    margin: auto;
+    font-weight: 600;
     max-width: 300px;
     font-size: 14px
 }
 
 
 .footer {
+    margin-top: auto;
     padding: 65px;
     background-color: #1a1a1a;
 }
 
-.footer__boxed {
+.footer__boxes {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer__title {
     color: #fff;
+}
+
+.footer__creator {
+    color: #fff;
+}
+
+.footer__creator a {
+    color: #fff;
+    text-decoration: underline;
+    float:right;
+    margin-left: 5px;
 }

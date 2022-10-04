@@ -19,7 +19,7 @@
 
 body {
     margin: 0;
-
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: rgb(70, 69, 69);
@@ -37,8 +37,17 @@ p {
     margin: 0 0 10px;
 }
 
+main {
+    margin: 1 1 auto;
+}
 /* Container
 ===================*/
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -252,11 +261,153 @@ p {
     background-color: #CFD8DC;
   }
 
+/* Rules boxes
+=============================*/
+
+.wiki__main {
+    padding-top: 150px;
+    margin: 0 120px;
+}
+
+.wiki__boxes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wiki__item {
+    position: sticky;
+    top: 80px;
+    margin: 0 25px;
+}
+
+.wiki__theme {
+    height: auto;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.100);
+    padding: 15px 15px;
+    border-radius: 20px;
+}
+
+
+
+.wiki__content {
+    font-size: 18px;
+    color: rgb(199, 199, 199);
+    min-width: 800px;
+    height: auto;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.100);
+    padding: 15px 50px;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.wiki__content p{
+    padding-top: 10px;
+}
+
+.wiki__content h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #00c3ff;
+}
+
+.wiki__content h2{
+    font-weight: 600;
+    color: #fff;
+}
+
+.wiki__content h3 {
+    color: rgba(255, 40, 40, 0.8);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.wiki__content h4 {
+    font-size: 14px;
+}
+
+.wiki__content a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.wiki__content span {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.wiki__content pun {
+    color: rgba(255, 40, 40);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.wiki__category {
+    height: auto;
+    width: 300px;
+    max-width: 300px;
+}
+
+/* rules nav
+===================*/
+
+.wiki__theme__nav {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 700;
+    align-items: flex-start;
+}
+
+.wiki__theme__nav h1 {
+    font-size: 18px;
+    color: #00c3ff;
+}
+
+.wiki__nav {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 25px;
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    opacity: .75;
+
+    transition: opacity .3s linear;
+}
+
+.wiki__nav:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.wiki__selected {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 25px;
+
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+.wiki__punishments {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
 /*Footer
 ====================*/
 
 .footer {
-    margin-top: 100px;
+    margin-top: auto;
     padding: 65px;
     background-color: #1a1a1a;
 }
@@ -270,77 +421,23 @@ p {
 }
 
 
-form {
-    color: rgb(199, 199, 199);
-    background-color: rgba(0, 0, 0, 0.100);
-    max-width: 700px;
-    margin: 150px auto;
-    flex-direction: column;
+/* LATER
+====================*/
+.later {
+    height: auto;
+    width: auto;
+    margin: 340px 0;
     display: flex;
     justify-content: center;
-    border-radius: 20px;
-}
-
-form h1 {
-    margin: auto;
-    padding-top: 20px;
-    color: #00c3ff;
-}
-
-.form__element {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    margin: 20px 50px;
-}
-textarea {
-    color: rgb(199, 199, 199);
-    background-color: rgba(0, 0, 0, 0.100);
-    padding: 10px 10px;
-    max-width: 500px;
-    min-width: 250px;
-    width: auto;
-    resize: vertical;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.100);
-}
-
-input {
-    color: rgb(199, 199, 199);
-    background-color: rgba(0, 0, 0, 0.100);
-    outline-width: 0;
-    padding: 6px 6px;
-    border-radius: 10px;
-    margin-top: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.100);
-}
-
-.form__content button {
-    color: #00c3ff93;
-    font-size: 20px;
-    font-weight: 700;
-    max-width: 300px;
-    text-decoration: none;
-    margin: auto;
-    user-select: none;
-    padding: 5px 25px;
-    outline: none;
-    border-radius: 7px;
-    background: rgba(0, 0, 0, 0.100);
-    border: none;
-    margin-bottom: 20px;
-
-    transition: 1s;
-} 
-
-.form__content button:hover {
-    color: #00c3ff;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
     
-    transition: 1s;
+    transition: 2s;
 }
 
-label span {
-    color: #f76fa3;
-    font-size: 20px;
+.later h1:hover {
+    color: rgb(255, 255, 255);
+    
+    transition: 2s;
 }

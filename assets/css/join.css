@@ -39,6 +39,13 @@ p {
 
 /* Container
 ===================*/
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -252,6 +259,144 @@ p {
     background-color: #CFD8DC;
   }
 
+/* join boxes
+=============================*/
+
+.join__main {
+    padding-top: 150px;
+    margin: 0 120px;
+}
+
+.join__boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.join__item {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 80px;
+    margin: 0 25px;
+}
+
+.join__theme {
+    height: auto;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.100);
+    padding: 15px 15px;
+    border-radius: 20px;
+}
+
+.join__content {
+    font-size: 18px;
+    color: rgb(199, 199, 199);
+    height: auto;
+    max-width: 1500px;
+    min-width: 300px;
+    background-color: rgba(0, 0, 0, 0.100);
+    padding: 15px 50px;
+    border-radius: 20px;
+    font-weight: 400;
+    text-indent: -30px;
+}
+
+.join__content p{
+    padding-top: 10px;
+}
+
+.join__content h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #00c3ff;
+}
+
+.join__content h2{
+    font-weight: 600;
+    color: #fff;
+}
+
+.join__content h3 {
+    color: rgba(255, 40, 40, 0.8);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.join__content h4 {
+    font-size: 14px;
+}
+
+.join__content a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.join__content span {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.join__content pun {
+    color: rgba(255, 40, 40);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.join__category {
+    height: auto;
+    width: 300px;
+    max-width: 300px;
+}
+
+/* join nav
+===================*/
+
+.join__theme__nav {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 700;
+    align-items: flex-start;
+}
+
+.join__nav__1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 25px;
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    opacity: .75;
+
+    transition: opacity .3s linear;
+}
+
+.join__nav__1:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.join__selected {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 25px;
+
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+.join__punishments {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
 /*Footer
 ====================*/
 
@@ -270,77 +415,23 @@ p {
 }
 
 
-form {
-    color: rgb(199, 199, 199);
-    background-color: rgba(0, 0, 0, 0.100);
-    max-width: 700px;
-    margin: 150px auto;
-    flex-direction: column;
+/* LATER
+====================*/
+.later {
+    height: auto;
+    width: auto;
+    margin: 340px 0;
     display: flex;
     justify-content: center;
-    border-radius: 20px;
-}
-
-form h1 {
-    margin: auto;
-    padding-top: 20px;
-    color: #00c3ff;
-}
-
-.form__element {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    margin: 20px 50px;
-}
-textarea {
-    color: rgb(199, 199, 199);
-    background-color: rgba(0, 0, 0, 0.100);
-    padding: 10px 10px;
-    max-width: 500px;
-    min-width: 250px;
-    width: auto;
-    resize: vertical;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.100);
-}
-
-input {
-    color: rgb(199, 199, 199);
-    background-color: rgba(0, 0, 0, 0.100);
-    outline-width: 0;
-    padding: 6px 6px;
-    border-radius: 10px;
-    margin-top: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.100);
-}
-
-.form__content button {
-    color: #00c3ff93;
-    font-size: 20px;
-    font-weight: 700;
-    max-width: 300px;
-    text-decoration: none;
-    margin: auto;
-    user-select: none;
-    padding: 5px 25px;
-    outline: none;
-    border-radius: 7px;
-    background: rgba(0, 0, 0, 0.100);
-    border: none;
-    margin-bottom: 20px;
-
-    transition: 1s;
-} 
-
-.form__content button:hover {
-    color: #00c3ff;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
     
-    transition: 1s;
+    transition: 2s;
 }
 
-label span {
-    color: #f76fa3;
-    font-size: 20px;
+.later h1:hover {
+    color: rgb(255, 255, 255);
+    
+    transition: 2s;
 }
