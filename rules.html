@@ -13,31 +13,34 @@
 <body>
     <header class="header">
         <section id="header"></section>
-        <div class="container">
             <div class="header__inner">
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                      <span></span>
-                    </label>
-                
-                    <ul class="menu__box">
-                      <li><a class="menu__item" href="index.html">Главная</a></li>
-                      <li><a class="menu__item" href="wiki.html">Wiki</a></li>
-                      <li><a class="menu__item" href="join.html">Как попасть</a></li>
-                      <li><a class="menu__item" href="rules.html">Правила</a></li>
-                      <li><h1></h1></li>
-                      <li><a class="menu__item" href="https://discord.gg/4ZVqVuzmjm">Discord</a></li>
-                      <li><a class="menu__item" href="#">Vk</a></li>
-                      <li><a class="menu__item" href="#">Telegram</a></li>
-                      <li><h1></h1></li>
-                      <li><a class="menu__item" href="rules.html">Основные правила</a></li>
-                      <li><a class="menu__item" href="rules__accounts.html">Положение об игровых аккаунтах</a></li>
-                      <li><a class="menu__item" href="rules__modifications.html">Модификации</a></li>
-                      <li><a class="menu__item" href="rules__game.html">Механика игры</a></li>
-                      <li><a class="menu__item" href="rules__communication.html">Коммуникация</a></li>
-                    </ul>
-                  </div>
+                    <div class="burger__menu">
+                    <input type="checkbox" id="toggle">
+                    <label for="toggle" class="toggle"><img src="assets/img/menu.png" width="40px"></label>
+    
+                    <dialog >
+                        <div class="flex__burger">
+                    <div class="menu__first">
+                        <a class="menu__link" href="index.html"><img src="assets/img/home.png">Главная</a>
+                        <a class="menu__link" href="wiki.html"><img src="assets/img/wiki.png">Wiki</a>
+                        <a class="menu__link" href="join.html"><img src="assets/img/join.png">Как попасть</a>
+                        <a class="menu__link" href="rules.html"><img src="assets/img/rules.png">Правила</a>
+                    </div>
+                    <div class="menu__second">
+                        <a class="menu__link" href="https://discord.gg/wX85tKejqQ"><img src="assets/img/discord.png">Discord</a>
+                        <a class="menu__link" href="#"><img src="assets/img/vk.png">Vk</a>
+                        <a class="menu__link" href="#"><img src="assets/img/telegram.png">Telegram</a>
+                    </div>
+                    <div class="menu__third">
+                        <a class="menu__link" href="rules.html">Основные правила</a>
+                        <a class="menu__link" href="rules__accounts.html">Положение об игровых аккаунтах</a>
+                        <a class="menu__link" href="rules__modifications.html">Модификации</a>
+                        <a class="menu__link" href="rules__game.html">Механика игры</a>
+                        <a class="menu__link" href="rules__communication.html">Коммуникация</a>
+                    </div>
+                </div>
+                    </dialog>
+                </div>
                 <button class="header__logo top_button">
                     <img class="logo" src="assets/img/VimeLine.png" alt="">
                 </button>
@@ -46,15 +49,11 @@
                     <a class="nav__link" href="wiki.html">Wiki</a>
                     <a class="nav__link" href="join.html">Как попасть</a>
                     <a class="nav__link nav__selected" href="#">Правила</a>
-                    <a class="nav__link" href="https://discord.gg/4ZVqVuzmjm"><img src="assets/img/discord.png" alt=""></a>
+                    <a class="nav__link" href="https://discord.gg/wX85tKejqQ"><img src="assets/img/discord.png" alt=""></a>
                     <a class="nav__link" href="#"><img src="assets/img/vk.png" alt=""></a>
                     <a class="nav__link" href="#"><img src="assets/img/telegram.png" alt=""></a>
                 </nav>
-                    <div class="search">
-                        <p></p>
-                    </div>
             </div>
-        </div>
     </header>
     <main>
         <div class="rules__main">
@@ -107,6 +106,9 @@
         <div class="footer__boxes">
             <div class="footer__title">
                 Сайт является частью сервера <b>VimeLine</b>
+            </div>
+            <div class="footer__creator">
+                    <p>Сайт разработан <a target="_blank" href="https://github.com/NonemJS"><b>NonemJS</b></a></p>
             </div>
         </div>
     </footer>
