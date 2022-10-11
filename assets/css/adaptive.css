@@ -28,6 +28,10 @@
   .rules__content {
     max-width: 700px;
   }
+
+  .wiki__content {
+    max-width: 700px;
+  }
 }
 @media only screen and (max-width: 1200px) {
     /* */
@@ -59,7 +63,16 @@
     .rules__content h1{
       font-size: 22px;
     }
+
+    .wiki__content {
+      max-width: 500px;
+    }
+
+    .wiki__content h1{
+      font-size: 22px;;
+    }
   }
+
 
 @media only screen and (max-width: 992px) {
     /* */
@@ -102,7 +115,7 @@
       font-size: 16px;
     }
 
-    .rules__theme, .rules__category {
+    .rules__theme, .rules__category, .wiki__theme, .wiki__category{
       display: none;
     }
 
@@ -111,6 +124,14 @@
     }
 
     .rules__content h1{
+      font-size: 18px;
+    }
+    
+    .wiki__content {
+      max-width: 700px;
+    }
+    
+    .wiki__content h1{
       font-size: 18px;
     }
   }
@@ -168,6 +189,15 @@
     }
 
     .rules__content h1{
+      font-size: 14px;
+    }
+
+    .wiki__content {
+      max-width: 500px;
+      font-size: 16px;
+    }
+    
+    .wiki__content h1{
       font-size: 14px;
     }
   }
@@ -238,6 +268,14 @@
     }
 
     .rules__content h1{
+      font-size: 14px;
+    }
+
+    .wiki__content {
+      max-width: 350px;
+    }
+    
+    .wiki__content h1{
       font-size: 14px;
     }
   }

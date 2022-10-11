@@ -206,7 +206,7 @@ main {
   dialog{
     border: none;
     background-color: rgba(255, 255, 255, 0);
-    margin-top: 50px;
+    margin-top: 30px;
     animation: appear 350ms ease-in 1;
     width: 90%;
     height: auto;
@@ -241,12 +241,22 @@ main {
     flex-direction: column;
     text-align: left;
   }
-
+  .menu__third {
+    padding: 0 30px;
+    background-color: rgb(43, 43, 43);
+    border: solid 2px #fff;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: left;
+  }
   .menu__link {
-    padding-top: 20px;
+    padding-top: 10px;
     font-weight: 600;
     color: #fff;
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
   }
 
@@ -285,18 +295,16 @@ main {
     border-radius: 20px;
 }
 
-
-
 .wiki__content {
     font-size: 18px;
     color: rgb(199, 199, 199);
-    min-width: 800px;
     height: auto;
-    width: auto;
+    width: 900px;
     background-color: rgba(0, 0, 0, 0.100);
     padding: 15px 50px;
     border-radius: 20px;
     font-weight: 400;
+    margin-bottom: 100px;
 }
 
 .wiki__content p{
@@ -349,6 +357,38 @@ main {
     max-width: 300px;
 }
 
+
+.voice__chat { 
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.voice__chat__mod {
+    border-radius: 20px;
+    margin: 10px 20px;
+    padding: 10px 50px;
+    background-color: #5e5e5e;
+}
+
+/* Simple Voice Chat
+===================*/
+
+.SVC__img {
+    width: 400px;
+}
+
+.STATUES__img {
+    width: 250px;
+}
+
+.wiki__content gr {
+    color:greenyellow;
+}
+
+.WT__img {
+    width: 400px;
+}
 /* rules nav
 ===================*/
 
@@ -362,17 +402,18 @@ main {
 }
 
 .wiki__theme__nav h1 {
-    font-size: 18px;
+    font-size: 16px;
     color: #00c3ff;
 }
 
 .wiki__nav {
     font-family: 'Montserrat', sans-serif;
     margin-left: 25px;
-
+    font-size: 14px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     opacity: .75;
+    font-weight: 600;
 
     transition: opacity .3s linear;
 }
@@ -405,6 +446,7 @@ main {
 .footer {
     margin-top: auto;
     padding: 65px;
+    
     background-color: #1a1a1a;
 }
 
@@ -418,6 +460,7 @@ main {
 }
 
 .footer__creator {
+    text-align: right;
     color: #fff;
 }
 
