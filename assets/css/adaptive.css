@@ -115,10 +115,25 @@
       font-size: 16px;
     }
 
-    .rules__theme, .rules__category, .wiki__theme, .wiki__category{
+    .rules__theme, .rules__category, .wiki__category{
       display: none;
     }
+    
+    .wiki__item {
+      position: relative;
+      justify-content: center;
+    }
+    .wiki__boxes {
+      flex-direction: column;
+      align-items: center;
+    }
 
+    .wiki__theme {
+     width: 700px; 
+    }
+    .wiki__main {
+      padding-top: 50px;
+    }
     .rules__content {
       max-width: 700px;
     }
@@ -196,6 +211,10 @@
       max-width: 500px;
       font-size: 16px;
     }
+
+    .wiki__theme {
+      width: 500px; 
+     }
     
     .wiki__content h1{
       font-size: 14px;
@@ -275,6 +294,10 @@
       max-width: 350px;
     }
     
+    .wiki__theme {
+      width: 350px;
+    }
+
     .wiki__content h1{
       font-size: 14px;
     }
