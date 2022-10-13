@@ -372,6 +372,10 @@ main {
     background-color: #5e5e5e;
 }
 
+.demo__video {
+    width: 600px;
+}
+
 /* Simple Voice Chat
 ===================*/
 

@@ -71,6 +71,9 @@
     .wiki__content h1{
       font-size: 22px;;
     }
+    .demo__video {
+      width: 400px;
+  }
   }
 
 
@@ -149,6 +152,9 @@
     .wiki__content h1{
       font-size: 18px;
     }
+    .demo__video {
+      width: 500px;
+  }
   }
   
   /* Small Devices, Tablets */
@@ -219,6 +225,9 @@
     .wiki__content h1{
       font-size: 14px;
     }
+    .demo__video {
+      width: 400px;
+  }
   }
   
   /* Extra Small Devices, Phones */
@@ -314,6 +323,9 @@
     .SVC__img {
       width: 250px;
     }
+    .demo__video {
+      width: 250px;
+  }
   }
   
   /* Custom, iPhone Retina */
