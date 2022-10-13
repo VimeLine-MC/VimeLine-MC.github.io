@@ -97,6 +97,7 @@ main {
     backdrop-filter: blur(7px);
     border-radius: 0px 0px 30px 30px;
     transition: 1s;
+    
 }
 
 .is_scrolled .header::after {
